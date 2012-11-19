@@ -36,3 +36,5 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 export HISTFILESIZE=10000
 export HISTCONTROL=ignoreboth
 export HISTIGNORE="ls:exit"
+
+PATH=$PATH:/opt/vagrant/bin
