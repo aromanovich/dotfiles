@@ -47,3 +47,32 @@ autocmd FileType less setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+map <A-1> 1gt
+map <A-2> 2gt
+map <A-3> 3gt
+map <A-4> 4gt
+map <A-5> 5gt
+map <A-6> 6gt
+map <A-7> 7gt
+map <A-8> 8gt
+map <A-9> 9gt
+
+map <C-Right> <ESC>:tabnext<CR>
+map <C-Left> <ESC>:tabprev<CR>
+map <C-t> <ESC>:tabnew<CR>
+
+augroup myvimrchooks
+    au!
+    autocmd bufwritepost .vimrc source ~/.vimrc
+augroup END
+
+set wildmode=longest,list,full
+set wildmenu
+
+map <F2> :NERDTreeToggle<CR>
+
+nmap <silent> <A-Up> :wincmd k<CR>                                                                                                                       
+nmap <silent> <A-Down> :wincmd j<CR>                                                                                                                       
+nmap <silent> <A-Left> :wincmd h<CR>                                                                                                                       
+nmap <silent> <A-Right> :wincmd l<CR>
