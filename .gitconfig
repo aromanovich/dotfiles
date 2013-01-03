@@ -24,3 +24,5 @@
     ci = commit
     co = checkout
     br = branch
+[init]
+    templatedir = ~/dotfiles/git-template
