@@ -36,8 +36,9 @@ export HISTFILESIZE=10000
 export HISTCONTROL=ignoreboth
 export HISTIGNORE="ls:exit"
 
-PATH=$PATH:/opt/vagrant/bin
-
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export PIP_USE_MIRRORS=1
 
+PATH=$PATH:/opt/vagrant/bin
+
+[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
