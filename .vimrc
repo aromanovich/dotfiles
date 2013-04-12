@@ -1,19 +1,19 @@
-call pathogen#infect()
+filetype plugin off
 
+execute pathogen#infect()
 syntax on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 set nocompatible
 
 let g:solarized_termcolors=256
-set background=dark
+set background=light
 colorscheme solarized
 
-map <C-V>   	"+gP
-map <S-Insert>	"+gP
+map <C-V> "+gP
+map <S-Insert> "+gP
 
-vnoremap <C-C>      "+y
+vnoremap <C-C> "+y
 vnoremap <C-Insert> "+y
 
 noremap <C-Z> u
@@ -63,8 +63,8 @@ map <C-Left> <ESC>:tabprev<CR>
 map <C-t> <ESC>:tabnew<CR>
 
 augroup myvimrchooks
-    au!
-    autocmd bufwritepost .vimrc source ~/.vimrc
+  au!
+  autocmd bufwritepost .vimrc source ~/.vimrc
 augroup END
 
 set wildmode=longest,list,full
@@ -72,7 +72,17 @@ set wildmenu
 
 map <F2> :NERDTreeToggle<CR>
 
-nmap <silent> <A-Up> :wincmd k<CR>                                                                                                                       
-nmap <silent> <A-Down> :wincmd j<CR>                                                                                                                       
-nmap <silent> <A-Left> :wincmd h<CR>                                                                                                                       
-nmap <silent> <A-Right> :wincmd l<CR>
+" press F10 to open the buffer menu
+set wildcharm=<C-Z>
+nnoremap <F10> :b <C-Z>
+
+"let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
+if has('gui_running')
+  set guifont=Inconsolata\ for\ Powerline\ 12
+endif"
+
+
+set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
+set laststatus=2 " Always display the statusline in all windows
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
