@@ -14,3 +14,5 @@ PATH=$PATH:/opt/vagrant/bin:~/.local/bin
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
 source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+alias ack="ack-grep --before-context=2 --after-context=2"
