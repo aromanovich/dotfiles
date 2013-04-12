@@ -76,12 +76,9 @@ map <F2> :NERDTreeToggle<CR>
 set wildcharm=<C-Z>
 nnoremap <F10> :b <C-Z>
 
-"let syntastic_mode_map = { 'passive_filetypes': ['html'] }
-
 if has('gui_running')
   set guifont=Inconsolata\ for\ Powerline\ 12
 endif"
-
 
 set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
 set laststatus=2 " Always display the statusline in all windows
