@@ -1,4 +1,5 @@
 set -o vi  # vim FTW!
+stty -ixon
 
 source /usr/share/autojump/autojump.sh
 source /usr/local/bin/virtualenvwrapper.sh
