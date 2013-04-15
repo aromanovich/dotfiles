@@ -77,7 +77,7 @@ set wildcharm=<C-Z>
 nnoremap <F10> :b <C-Z>
 
 if has('gui_running')
-  set guifont=Inconsolata\ for\ Powerline\ 12
+  set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
 endif"
 
 set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim

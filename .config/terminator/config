@@ -19,7 +19,7 @@
     cursor_color = "#eee8d5"
     foreground_color = "#eee8d5"
     show_titlebar = False
-    font = Inconsolata for Powerline 12
+    font = Ubuntu Mono for Powerline 12
     background_color = "#002b36"
 [layouts]
   [[default]]
