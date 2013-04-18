@@ -9,6 +9,7 @@ export HISTFILESIZE=10000
 export HISTCONTROL=ignoreboth
 export HISTIGNORE="ls:exit"
 export PIP_USE_MIRRORS=1
+export PYTHONDONTWRITEBYTECODE=1
 
 PATH=$PATH:/opt/vagrant/bin:~/.local/bin
 
