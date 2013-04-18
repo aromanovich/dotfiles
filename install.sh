@@ -13,3 +13,6 @@ git submodule init
 git submodule update
 ln -si ./.config/powerline ~/.config/powerline
 ln -si ./.config/terminator ~/.config/terminator
+
+echo 'basename $VIRTUAL_ENV > ~/.last-venv' >> $VIRTUALENVWRAPPER_HOOK_DIR/postactivate
+echo 'rm ~/.last-venv' >> $VIRTUALENVWRAPPER_HOOK_DIR/postdeactivate

@@ -17,3 +17,7 @@ PATH=$PATH:/opt/vagrant/bin:~/.local/bin
 source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 
 alias ack="ack-grep --before-context=2 --after-context=2"
+
+if [ -e ~/.last-venv ]; then
+  workon `cat ~/.last-venv`
+fi
