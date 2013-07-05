@@ -10,6 +10,7 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE="ls:exit"
 export PIP_USE_MIRRORS=1
 export PYTHONDONTWRITEBYTECODE=1
+export VIRTUALENV_USE_DISTRIBUTE=1
 
 PATH=$PATH:/opt/vagrant/bin:~/.local/bin
 
