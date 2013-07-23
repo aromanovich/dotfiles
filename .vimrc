@@ -41,6 +41,9 @@ set nowrap
 set lines=40
 set columns=120
 
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
+
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType less setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -83,3 +86,6 @@ endif"
 set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+" Save a file as root (,W)
+noremap <leader>W :w !sudo tee % > /dev/null<CR>
